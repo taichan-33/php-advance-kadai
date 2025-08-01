@@ -25,7 +25,7 @@
         </article>
     </main>
     <footer>
-        <p class="copyright">&copy; 書籍管理アプリ All right reserved.</p>
+        <p class="copyright">&copy; 書籍管理アプリ All rights reserved.</p>
     </footer>
 </body>
 </html>
