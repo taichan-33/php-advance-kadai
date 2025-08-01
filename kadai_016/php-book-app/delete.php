@@ -7,7 +7,7 @@ $password = 'root';
 // idパラメータの値が存在すれば処理を行う
 if (isset($_GET['id'])) {
     try {
-        $pdo = new PDO($sdn, $user, $password);
+        $pdo = new PDO($dsn, $user, $password);
 
         // idカラムの値をプレースホルダーに置き換えたDELETE文を作成
         $sql_delete = 'DELETE FROM books WHERE id = :id;';
