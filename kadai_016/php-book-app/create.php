@@ -26,7 +26,7 @@ if (isset($_POST['submit'])) {
         // 追加した件数を取得する
         $count = $stmt_insert->rowCount();
 
-        $message = "商品を{$count}件登録しました。";
+        $message = "書籍を{$count}件登録しました。";
 
         // 登録が完了したら、read.phpへリダイレクトする
         header("Location: read.php?message={$message}");
@@ -83,10 +83,10 @@ try {
             <form action="create.php" method="post" class="registration-form">
                 <div>
                     <label for="book_code">書籍コード</label>
-                    <input type="text" id="book_code" name="book_code" maxlength="10" min="0" max="100000000" required>
+                    <input type="number" id="book_code" name="book_code" maxlength="10" min="0" max="100000000" required>
                     
                     <label for="book_name">書籍名</label>
-                    <input type="text" id="product_name" name="book_name" maxlength="50" required>
+                    <input type="text" id="book_name" name="book_name" maxlength="50" required>
 
                     <label for="price">単価</label>
                     <input type="number" id="price" name="price" min="0" max="1000000" required>
@@ -110,7 +110,7 @@ try {
         </article>
     </main>
     <footer>
-        <p class="copyright">&copy; 書籍管理アプリ All right reserved.</p>
+        <p class="copyright">&copy; 書籍管理アプリ All rights reserved.</p>
     </footer>
 </body>
 </html>
