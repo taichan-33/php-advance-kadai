@@ -108,7 +108,7 @@ if (isset($_GET['id'])) {
         <article class="registration">
             <h1>書籍編集</h1>
             <div class="back">
-                <a href="read.php" class="btn">&lt; 書籍一覧へ戻る</a>
+                <a href="read.php" class="btn">&lt; 戻る</a>
             </div>
             <form action="update.php?id=<?= $_GET['id'] ?>" method="post" class="registration-form">
                 <div>
@@ -137,9 +137,9 @@ if (isset($_GET['id'])) {
                             }
                         }
                         ?>
+                    </select>
                 </div>
-                </select>
-                <button type="submit" class="submit-btn" name="submit" value="update">更新する</button>
+                <button type="submit" class="submit-btn" name="submit" value="update">更新</button>
             </form>
         </article>
     </main>
