@@ -1,6 +1,6 @@
 <?php
 
-$sdn = 'mysql:dbname=php_book_app;host=localhost;charset=utf8mb4';
+$dsn = 'mysql:dbname=php_book_app;host=localhost;charset=utf8mb4';
 $user = 'root';
 $password = 'root';
 
