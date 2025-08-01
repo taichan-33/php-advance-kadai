@@ -88,7 +88,7 @@ try {
                     </a>
                     <form action="read.php" method="get" class="search-form">
                         <input type="hidden" name="order" value="<?= $order ?>">
-                        <input type="text" class="search-box" placeholder="商品名を入力" name="keyword" value="<?= $keyword ?>">
+                        <input type="text" class="search-box" placeholder="書籍名を入力" name="keyword" value="<?= $keyword ?>">
                     </form>
                 </div>
                 <a href="create.php" class="btn">書籍登録</a>
