@@ -143,11 +143,11 @@ if (isset($_GET['id'])) {
             </form>
         </article>
         <div class="back">
-            <a href="read.php" class="btn">&lt; 商品一覧へ戻る</a>
+            <a href="read.php" class="btn">&lt; 書籍一覧へ戻る</a>
         </div>
     </main>
     <footer>
-        <p  class="copyright">&copy; 商品管理アプリ All rights reserved.</p>
+        <p  class="copyright">&copy; 書籍管理アプリ All rights reserved.</p>
     </footer>
 </body>
 </html>
