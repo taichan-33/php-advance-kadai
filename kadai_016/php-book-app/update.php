@@ -35,9 +35,9 @@ if (isset($_POST['submit'])) {
         // 更新した件数を取得する
         $count = $stmt_update->rowCount();
 
-        $message = "商品を{$count}件編集しました。";
+        $message = "書籍を{$count}件編集しました。";
 
-        // 商品一覧ページにリダイレクトさせる（同時にmessageパラメータも渡す）
+        // 書籍一覧ページにリダイレクトさせる（同時にmessageパラメータも渡す）
         header("Location: read.php?message={$message}");
     } catch (PDOException $e) {
         exit($e->getMessage());
@@ -142,9 +142,6 @@ if (isset($_GET['id'])) {
                 <button type="submit" class="submit-btn" name="submit" value="update">更新する</button>
             </form>
         </article>
-        <div class="back">
-            <a href="read.php" class="btn">&lt; 書籍一覧へ戻る</a>
-        </div>
     </main>
     <footer>
         <p  class="copyright">&copy; 書籍管理アプリ All rights reserved.</p>
