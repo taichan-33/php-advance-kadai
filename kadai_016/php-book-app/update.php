@@ -37,7 +37,7 @@ if (isset($_POST['submit'])) {
 
         $message = "書籍を{$count}件編集しました。";
 
-        // 書籍一覧ページにリダイレクトさせる（同時にmessageパラメータも渡す）
+        // 商品一覧ページにリダイレクトさせる（同時にmessageパラメータも渡す）
         header("Location: read.php?message={$message}");
     } catch (PDOException $e) {
         exit($e->getMessage());
@@ -130,7 +130,7 @@ if (isset($_GET['id'])) {
                         <?php
                         // 仕入れ先コードの選択肢を表示する
                         foreach ($genre_codes as $genre_code) {
-                            if ($genre_code === $genre_codes['genre_code']) {
+                            if ($genre_code === $book['genre_code']) {
                                 echo "<option value='{$genre_code}' selected>{$genre_code}</option>";
                             } else {
                                 echo "<option value='{$genre_code}'>{$genre_code}</option>";
@@ -139,7 +139,7 @@ if (isset($_GET['id'])) {
                         ?>
                     </select>
                 </div>
-                <button type="submit" class="submit-btn" name="submit" value="update">更新</button>
+                <button type="submit" class="submit-btn" name="submit" value="update">更新する</button>
             </form>
         </article>
     </main>
