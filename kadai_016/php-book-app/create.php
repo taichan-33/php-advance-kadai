@@ -78,7 +78,7 @@ try {
         <article class="registration">
             <h1>書籍登録</h1>
             <div class="back">
-                <a href="read.php" class="btn">&lt;  書籍一覧へ戻る</a>
+                <a href="read.php" class="btn">&lt;  戻る</a>
             </div>
             <form action="create.php" method="post" class="registration-form">
                 <div>
