@@ -71,9 +71,9 @@ try {
     </header>
     <main>
         <article class="books">
-            <h1>商品一覧</h1>
+            <h1>書籍一覧</h1>
             <?php
-            // 商品の登録・更新・削除が完了した場合、メッセージを表示する
+            // 書籍の登録・更新・削除が完了した場合、メッセージを表示する
             if (isset($_GET['message'])) {
                 echo "<p class='success'>{$_GET['message']}</p>";
             }
